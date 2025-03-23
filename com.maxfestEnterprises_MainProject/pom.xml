@@ -80,7 +80,7 @@
 				<configuration>
 
 					<suiteXmlFiles>
-						<file>groupSuite</file>
+						<file>groupSuite.xml</file>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
