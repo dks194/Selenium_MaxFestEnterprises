@@ -1,6 +1,10 @@
 package base;
 
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeSuite;
+import org.testng.annotations.Parameters;
+
+import extentReport.ExtentManager;
 
 import java.io.FileInputStream;
 
@@ -10,6 +14,8 @@ import java.util.Properties;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 
 public class BaseClass {
@@ -24,18 +30,31 @@ public class BaseClass {
 		property.load(f);
 	}
 
-	@BeforeMethod
-	public void beforeMethod() throws IOException {
+	@BeforeSuite
+	public void createReport() {
+		ExtentManager.createInstance();
+	}
+
+	@BeforeMethod(groups = { "Launch" })
+	@Parameters("Browser")
+	public void beforeMethod(String browserName) throws IOException {
 		readProperty();
-		driver = new ChromeDriver();
+		if (browserName.equalsIgnoreCase("Chrome")) {
+			driver = new ChromeDriver();
+		} else if (browserName.equalsIgnoreCase("Firefox")) {
+			driver = new FirefoxDriver();
+		} else {
+			throw new IllegalArgumentException("Browser not supported " + browserName);
+		}
+
 		driver.manage().window().maximize();
 		driver.get(property.getProperty("base_URL"));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 	}
 
-	@AfterMethod
+	@AfterMethod(groups = { "End" })
 	public void afterMethod() {
-		//driver.quit();
+		driver.quit();
 	}
 
 }

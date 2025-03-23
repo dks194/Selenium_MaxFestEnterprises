@@ -1,0 +1,33 @@
+<suite name="CrossBrowserTestSuite" parallel="tests" thread-count="2">
+
+	<listeners>
+		<listener class-name="retry.RetryListener" />
+		<listener class-name="extentReport.TestListener" />
+	</listeners>
+
+	<test name="ChromeTest">
+		<parameter name="Browser" value="Chrome"> </parameter>
+
+
+		<classes>
+			<class name="testClasses.UsersPageTestClass" />
+			<class name="testClasses.LoginPageTestClass" />
+			<class name="testClasses.DashboardPageTestClass" />
+		</classes>
+	</test> <!--
+	Test -->
+
+
+	<test name="FirefoxTest">
+		<parameter name="Browser" value="Firefox"></parameter>
+		<classes>
+			<class name="testClasses.UsersPageTestClass" />
+			<class name="testClasses.LoginPageTestClass" />
+			<class name="testClasses.DashboardPageTestClass" />
+		</classes>
+	</test> <!--
+	Test -->
+
+
+</suite> <!--
+Suite -->

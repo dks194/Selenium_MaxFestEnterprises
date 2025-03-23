@@ -34,6 +34,12 @@ public class DashboardPage {
 
 	@FindBy(id = "view_todays_profit")
 	WebElement todayProfitTooltip;
+	
+	@FindBy(id = "tour_step5_menu")
+	WebElement productTab;
+	
+	@FindBy(xpath = "//a[@href='https://qalegend.com/billing/public/products/create']")
+	WebElement addProduct;
 
 	public String getTitleOfDashboardPage() {
 		return gl.getTextOfElement(welcomeAdminText);
@@ -60,5 +66,13 @@ public class DashboardPage {
 		return gl.getAttributeOfAnElement(todayProfitTooltip, "data-original-title");
 	}
 
+	public void clickOnProducts() {
+		gl.clickOnAnElement(productTab);
+	}
+	
+	public AddProductPage clickOnaddProduct() {
+		gl.clickOnAnElement(addProduct);
+		return new AddProductPage(driver);
+	}
 
 }
