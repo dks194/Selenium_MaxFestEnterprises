@@ -80,7 +80,7 @@
 				<configuration>
 
 					<suiteXmlFiles>
-						<file>groupSuite.xml</file>
+						<file>testng.xml</file>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
