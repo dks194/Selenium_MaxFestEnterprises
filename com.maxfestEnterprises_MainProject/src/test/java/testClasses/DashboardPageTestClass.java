@@ -14,7 +14,7 @@ public class DashboardPageTestClass extends BaseClass {
 	DashboardPage dp;
 	UsersPage up;
 
-	@Test
+	@Test(priority = 1)
 	public void verifyUsersPageOpensWhileClickingOnThe_UserManagement() {
 
 		lp = new LoginPage(driver);
@@ -28,7 +28,7 @@ public class DashboardPageTestClass extends BaseClass {
 		Assert.assertTrue(actual_heading.contains("Users Manage users"));
 	}
 
-	@Test
+	@Test(priority = 2)
 	public void verifyTheToolTipInTodaysProfitIcon() {
 		lp = new LoginPage(driver);
 		dp = new DashboardPage(driver);

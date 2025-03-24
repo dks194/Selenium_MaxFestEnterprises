@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-03-24T22:22:27 IST" name="Suite" finished-at="2025-03-24T22:23:21 IST" duration-ms="53354">
+    <groups>
+      <group name="Group1">
+        <method signature="LoginPageTestClass.verifyTheExactPageIsOpenWhileHittingTheUrl()[pri:1, instance:testClasses.LoginPageTestClass@46d59067]" name="verifyTheExactPageIsOpenWhileHittingTheUrl" class="testClasses.LoginPageTestClass"/>
+        <method signature="LoginPageTestClass.verifySuccessfulLogin(java.lang.String,java.lang.String)[pri:2, instance:testClasses.LoginPageTestClass@46d59067]" name="verifySuccessfulLogin" class="testClasses.LoginPageTestClass"/>
+        <method signature="LoginPageTestClass.verifyUnsuccessfulLogin(java.lang.String,java.lang.String)[pri:3, instance:testClasses.LoginPageTestClass@46d59067]" name="verifyUnsuccessfulLogin" class="testClasses.LoginPageTestClass"/>
+        <method signature="LoginPageTestClass.verifyResetPasswordPageOpensWhileClickingOnThe_ForgotYourPassword_Link()[pri:4, instance:testClasses.LoginPageTestClass@46d59067]" name="verifyResetPasswordPageOpensWhileClickingOnThe_ForgotYourPassword_Link" class="testClasses.LoginPageTestClass"/>
+      </group> <!-- Group1 -->
+    </groups>
+    <test started-at="2025-03-24T22:22:27 IST" name="GroupTest" finished-at="2025-03-24T22:23:21 IST" duration-ms="53354">
+      <class name="testClasses.LoginPageTestClass">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testClasses.LoginPageTestClass@46d59067]" started-at="2025-03-24T22:22:27 IST" name="beforeMethod" finished-at="2025-03-24T22:22:39 IST" duration-ms="11904" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyTheExactPageIsOpenWhileHittingTheUrl()[pri:1, instance:testClasses.LoginPageTestClass@46d59067]" started-at="2025-03-24T22:22:39 IST" name="verifyTheExactPageIsOpenWhileHittingTheUrl" finished-at="2025-03-24T22:22:39 IST" duration-ms="186" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyTheExactPageIsOpenWhileHittingTheUrl -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testClasses.LoginPageTestClass@46d59067]" started-at="2025-03-24T22:22:39 IST" name="afterMethod" finished-at="2025-03-24T22:22:40 IST" duration-ms="722" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testClasses.LoginPageTestClass@46d59067]" started-at="2025-03-24T22:22:42 IST" name="beforeMethod" finished-at="2025-03-24T22:22:48 IST" duration-ms="5866" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifySuccessfulLogin(java.lang.String,java.lang.String)[pri:2, instance:testClasses.LoginPageTestClass@46d59067]" started-at="2025-03-24T22:22:48 IST" name="verifySuccessfulLogin" data-provider="successfulLogIn" finished-at="2025-03-24T22:22:52 IST" duration-ms="4176" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySuccessfulLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testClasses.LoginPageTestClass@46d59067]" started-at="2025-03-24T22:22:52 IST" name="afterMethod" finished-at="2025-03-24T22:22:52 IST" duration-ms="605" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testClasses.LoginPageTestClass@46d59067]" started-at="2025-03-24T22:22:52 IST" name="beforeMethod" finished-at="2025-03-24T22:22:58 IST" duration-ms="5186" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUnsuccessfulLogin(java.lang.String,java.lang.String)[pri:3, instance:testClasses.LoginPageTestClass@46d59067]" started-at="2025-03-24T22:22:58 IST" name="verifyUnsuccessfulLogin" data-provider="unsuccessfulLogin" finished-at="2025-03-24T22:22:59 IST" duration-ms="1465" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnsuccessfulLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testClasses.LoginPageTestClass@46d59067]" started-at="2025-03-24T22:22:59 IST" name="afterMethod" finished-at="2025-03-24T22:23:00 IST" duration-ms="682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testClasses.LoginPageTestClass@46d59067]" started-at="2025-03-24T22:23:00 IST" name="beforeMethod" finished-at="2025-03-24T22:23:03 IST" duration-ms="3456" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUnsuccessfulLogin(java.lang.String,java.lang.String)[pri:3, instance:testClasses.LoginPageTestClass@46d59067]" started-at="2025-03-24T22:23:03 IST" name="verifyUnsuccessfulLogin" data-provider="unsuccessfulLogin" finished-at="2025-03-24T22:23:06 IST" duration-ms="3034" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[adm]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[123456]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnsuccessfulLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testClasses.LoginPageTestClass@46d59067]" started-at="2025-03-24T22:23:06 IST" name="afterMethod" finished-at="2025-03-24T22:23:07 IST" duration-ms="761" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testClasses.LoginPageTestClass@46d59067]" started-at="2025-03-24T22:23:07 IST" name="beforeMethod" finished-at="2025-03-24T22:23:12 IST" duration-ms="5041" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyUnsuccessfulLogin(java.lang.String,java.lang.String)[pri:3, instance:testClasses.LoginPageTestClass@46d59067]" started-at="2025-03-24T22:23:12 IST" name="verifyUnsuccessfulLogin" data-provider="unsuccessfulLogin" finished-at="2025-03-24T22:23:14 IST" duration-ms="1388" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admi]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[12345]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnsuccessfulLogin -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testClasses.LoginPageTestClass@46d59067]" started-at="2025-03-24T22:23:14 IST" name="afterMethod" finished-at="2025-03-24T22:23:14 IST" duration-ms="538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testClasses.LoginPageTestClass@46d59067]" started-at="2025-03-24T22:23:14 IST" name="beforeMethod" finished-at="2025-03-24T22:23:17 IST" duration-ms="2704" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyResetPasswordPageOpensWhileClickingOnThe_ForgotYourPassword_Link()[pri:4, instance:testClasses.LoginPageTestClass@46d59067]" started-at="2025-03-24T22:23:17 IST" name="verifyResetPasswordPageOpensWhileClickingOnThe_ForgotYourPassword_Link" finished-at="2025-03-24T22:23:20 IST" duration-ms="3242" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyResetPasswordPageOpensWhileClickingOnThe_ForgotYourPassword_Link -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:testClasses.LoginPageTestClass@46d59067]" started-at="2025-03-24T22:23:20 IST" name="afterMethod" finished-at="2025-03-24T22:23:21 IST" duration-ms="602" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- testClasses.LoginPageTestClass -->
+    </test> <!-- GroupTest -->
+  </suite> <!-- Suite -->
+</testng-results>

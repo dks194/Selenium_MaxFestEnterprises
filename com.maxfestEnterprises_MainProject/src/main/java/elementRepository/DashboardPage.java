@@ -70,9 +70,6 @@ public class DashboardPage {
 		gl.clickOnAnElement(productTab);
 	}
 	
-	public AddProductPage clickOnaddProduct() {
-		gl.clickOnAnElement(addProduct);
-		return new AddProductPage(driver);
-	}
+
 
 }

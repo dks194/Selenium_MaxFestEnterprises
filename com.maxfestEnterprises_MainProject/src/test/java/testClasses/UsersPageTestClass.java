@@ -14,7 +14,7 @@ public class UsersPageTestClass extends BaseClass {
 	DashboardPage dp;
 	UsersPage up;
 
-	@Test
+	@Test(priority = 0)
 	public void verifyUserIsAdded() {
 		lp = new LoginPage(driver);
 		dp = new DashboardPage(driver);
@@ -31,7 +31,7 @@ public class UsersPageTestClass extends BaseClass {
 		Assert.assertEquals(actual_text, ranEmail);
 	}
 	
-	@Test
+	@Test(priority = 1)
 	public void verifyErrorMessageAppearsifMandatoryField_firstName_IsNotProvided() {
 		lp = new LoginPage(driver);
 		dp = new DashboardPage(driver);
@@ -48,7 +48,7 @@ public class UsersPageTestClass extends BaseClass {
 		
 	}
 	
-	@Test
+	@Test(priority = 2)
 	public void verifyThe_IsActive_checkboxIsSelectedByDefault() {
 		lp = new LoginPage(driver);
 		dp = new DashboardPage(driver);
@@ -62,7 +62,7 @@ public class UsersPageTestClass extends BaseClass {
 		Assert.assertTrue(actual_state);	
 	}
 	
-	@Test
+	@Test(priority = 3)
 	public void verifyAConfirmationPopUpAppearsWhileDeletingAnUser() {
 		lp = new LoginPage(driver);
 		dp = new DashboardPage(driver);
@@ -80,7 +80,7 @@ public class UsersPageTestClass extends BaseClass {
 		Assert.assertEquals(actual_deletepopupText, "Are you sure ?");
 	}
 	
-	@Test
+	@Test(priority = 4)
 	public void verifyThe_AddedUser_CanBeDeleted() {
 		lp = new LoginPage(driver);
 		dp = new DashboardPage(driver);
@@ -100,7 +100,7 @@ public class UsersPageTestClass extends BaseClass {
 		Assert.assertEquals(actual_message, "No matching records found");			
 	}
 	
-	@Test
+	@Test(priority = 5)
 	public void verifyEditUserpageAppearsWhileClickingOnTheEditButton() {
 		lp = new LoginPage(driver);
 		dp = new DashboardPage(driver);
@@ -117,7 +117,7 @@ public class UsersPageTestClass extends BaseClass {
 		
 	}
 	
-	@Test
+	@Test(priority = 6)
 	public void verifyThe_AddedUser_CanBeEdited() {
 		lp = new LoginPage(driver);
 		dp = new DashboardPage(driver);
